@@ -1,0 +1,48 @@
+Title: The Journey of a URL: What Happens When You Enter a Web Address in Your Browser
+
+Author: Tumbo Dancan
+
+Have you ever wondered what happens when you enter a URL into your web browser and hit Enter? Understanding the intricacies of data transportation from the internet to your computer can be enlightening. In this article, I, Tumbo Dancan, will demystify the inner workings of your browser and how data is transmitted to your computer via the Internet.
+
+1. DNS Resolution:
+When you enter a URL and press Enter, your browser first needs to find the IP address of the server hosting the webpage. This is done through a DNS query, where your computer (the DNS client) requests an IP address from a DNS server for the given domain name. The DNS resolver checks browser and OS caches, then contacts your Internet service provider's resolver. If needed, it consults root servers, TLD (Top-Level Domain) servers, and authoritative name servers to resolve the IP address. Once obtained, the resolver returns this data to your operating system.
+
+2. TCP/IP:
+Your browser sends a request to the website's server to initiate a conversation. To facilitate this communication, both parties must speak a common language or message format. This is where TCP/IP comes into play. TCP/IP consists of layers:
+
+- Application Layer: This layer handles direct communication with applications like your browser, using protocols like HTTP for web viewing and SMTP for email. Data from the browser is passed to the next layer through ports.
+
+- Transport Layer: Here, TCP and UDP come into play. TCP segments data into smaller units (packets) for efficient transmission. It adds headers with instructions for reassembly and error checking. These segments move to the Internet Layer.
+
+- Internet Layer: This layer adds source and destination IP addresses to segments for routing. Segments are then sent to the top layer.
+
+- Network Access Layer: This layer manages physical data transmission within a network.
+
+3. Protocols:
+Different protocols handle specific tasks:
+
+- HTTP: For web browsing.
+- HTTPS: Ensures secure communication between web servers and browsers using SSL (Secure Sockets Layer).
+- FTP: Facilitates computer-to-computer file transfer.
+
+With "https://www.google.com/" as your request, your computer communicates with the server in the "https" language, and the server responds with web pages based on this language.
+
+4. Firewalls:
+Firewalls monitor incoming and outgoing network traffic, allowing or blocking communication based on predefined criteria. They play a crucial role in preventing malware attacks during internet communication.
+
+5. HTTPS/SSL:
+HTTPS uses SSL (Secure Sockets Layer) to establish secure connections and encrypt data between networked devices. An SSL handshake occurs at the start of the connection.
+
+6. Load Balancer:
+To handle high traffic, websites like Google use multiple servers with unique IP addresses. Load balancers distribute requests from clients to these servers, ensuring efficient traffic management.
+
+7. Web Server & Application Server:
+Web servers process user requests on the World Wide Web, delivering web content via HTTP. Application servers serve dynamic content, execute business logic for applications, and support various client response protocols.
+
+8. Database:
+Databases store and retrieve structured data efficiently. Database Management Systems (DBMS) manage data, enabling applications to interact with the database server. For instance, when accessing the Google homepage, the database may be queried for location information to tailor the page to your needs.
+
+9. Content Delivery Networks (CDNs):
+CDNs play a crucial role in delivering web content efficiently. They store copies of web content on servers strategically distributed across the globe. When you access a website, the CDN serves content from the server nearest to your location, reducing latency and improving load times.
+
+In conclusion, this article provides a comprehensive look into the intricate workings of the web when you type a URL into your browser. I appreciate your visit and hope this information satisfies your curiosity about what happens when you enter a web address and hit Enter. Thank you for reading, and I look forward to your return.
